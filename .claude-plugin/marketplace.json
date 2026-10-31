@@ -3,6 +3,9 @@
   "owner": {
     "name": "Shubham Kumar"
   },
+  "metadata": {
+    "description": "Claude skills for Indian stock markets: NSE/BSE analysis, NIFTY F&O, exact STT and charges, Indian tax, and broker MCP integration."
+  },
   "plugins": [
     {
       "name": "india-trading-skills",

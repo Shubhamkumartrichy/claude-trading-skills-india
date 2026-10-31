@@ -10,7 +10,7 @@
 
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?logo=claude&logoColor=white)](#quick-start)
 [![Skills](https://img.shields.io/badge/skills-18-2563EB)](#skills)
-[![Tests](https://github.com/YOUR_GITHUB_USERNAME/india-trading-skills/actions/workflows/tests.yml/badge.svg)](https://github.com/YOUR_GITHUB_USERNAME/india-trading-skills/actions/workflows/tests.yml)
+[![Tests](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml/badge.svg)](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](#calculators)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-22C55E)](#calculators)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22C55E)](LICENSE)
@@ -43,7 +43,7 @@ maths instead of guessing. Some of what it knows that most tools get wrong:
 **1. Install** (inside Claude Code):
 
 ```
-/plugin marketplace add YOUR_GITHUB_USERNAME/india-trading-skills
+/plugin marketplace add Shubhamkumartrichy/claude-trading-skills-india
 /plugin install india-trading-skills@india-trading-skills
 ```
 
@@ -69,15 +69,15 @@ are needed for anything else.
 **skills CLI**
 
 ```bash
-npx skills add YOUR_GITHUB_USERNAME/india-trading-skills
+npx skills add Shubhamkumartrichy/claude-trading-skills-india
 ```
 
 **Manual (project-level symlinks)**
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/india-trading-skills.git
+git clone https://github.com/Shubhamkumartrichy/claude-trading-skills-india.git
 mkdir -p .claude/skills
-for d in india-trading-skills/skills/*/; do ln -s "$(cd "$d" && pwd)" ".claude/skills/$(basename "$d")"; done
+for d in claude-trading-skills-india/skills/*/; do ln -s "$(cd "$d" && pwd)" ".claude/skills/$(basename "$d")"; done
 ```
 
 Install the whole pack. Several skills call scripts that live in sibling skills (for example,
@@ -304,8 +304,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 If this saved you from a bad trade or a wrong tax estimate, a star helps other traders find it.
 
-<a href="https://star-history.com/#YOUR_GITHUB_USERNAME/india-trading-skills&Date">
-  <img src="https://api.star-history.com/svg?repos=YOUR_GITHUB_USERNAME/india-trading-skills&type=Date" alt="Star history chart" width="600">
+<a href="https://star-history.com/#Shubhamkumartrichy/claude-trading-skills-india&Date">
+  <img src="https://api.star-history.com/svg?repos=Shubhamkumartrichy/claude-trading-skills-india&type=Date" alt="Star history chart" width="600">
 </a>
 
 ## ⚠️ Disclaimer

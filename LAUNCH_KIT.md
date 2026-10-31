@@ -19,7 +19,7 @@ since the repo already has them) and push:
 git init -b main
 git add .
 git commit -m "India Trading Skills v1.0.0: 18 Claude skills for NSE/BSE"
-git remote add origin https://github.com/<your-username>/india-trading-skills.git
+git remote add origin https://github.com/Shubhamkumartrichy/claude-trading-skills-india.git
 git push -u origin main
 ```
 
@@ -65,7 +65,7 @@ calculators. Open source. 🧵👇 [banner + demo]
 without showing you a full ticket and getting a "yes".
 
 5/ 5 zero-dependency Python calculators, 80 tests, MIT licence.
-⭐ github.com/<you>/india-trading-skills
+⭐ github.com/Shubhamkumartrichy/claude-trading-skills-india
 
 ### LinkedIn
 
@@ -83,7 +83,7 @@ A few things surprised me while building it:
 It connects to Groww, Zerodha, Dhan and Upstox through their official MCP servers, and it will
 never place an order without explicit confirmation.
 
-Free and open source: github.com/<you>/india-trading-skills
+Free and open source: github.com/Shubhamkumartrichy/claude-trading-skills-india
 (Educational tool, not investment advice.)
 
 ### Reddit
