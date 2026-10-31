@@ -6,7 +6,7 @@
 
 **Claude को एक ऐसा Dalal Street analyst बनाइए जो हिसाब सही लगाए।**
 
-18 skills · 5 tested calculators · NSE/BSE · NIFTY F&O · सटीक STT और charges · भारतीय टैक्स · Groww / Zerodha / Dhan / Upstox
+23 skills · 10 tested calculators · NSE/BSE · NIFTY F&O · सटीक STT और charges · भारतीय टैक्स · Groww / Zerodha / Dhan / Upstox
 
 [English README](README.md)
 
@@ -63,13 +63,14 @@ Broker नहीं जोड़ना? `pip install yfinance` कर लें,
 | "Market खुलने से पहले की रिपोर्ट दो" | GIFT Nifty, FII/DII flows, India VIX, NIFTY के अहम स्तर, ban list, आज के events |
 | "इस IPO में apply करूँ?" | RHP checklist, peers से valuation, subscription का मतलब, allotment की संभावना, lock-in तारीखें |
 
-## 🧩 18 skills एक नज़र में
+## 🧩 23 skills एक नज़र में
 
 | समूह | Skills |
 |---|---|
 | **Analyst** | `india-market-analyst` (पूरा विश्लेषण), `market-pulse` (बाज़ार का हाल) |
-| **Charts** | `technical-analysis`, `multi-timeframe-analysis`, `rsi-divergence`, `fibonacci-trading` |
-| **Risk** | `position-sizing`, `stop-loss-strategies`, `trailing-stops`, `risk-reward-ratio` |
+| **Market timing** | `market-regime` (बाज़ार का trend और कितना निवेश करें), `sector-rotation` (कौन-से sector आगे हैं) |
+| **Charts** | `technical-analysis`, `multi-timeframe-analysis`, `rsi-divergence`, `fibonacci-trading`, `breakout-planner` (VCP breakout) |
+| **Risk** | `position-sizing`, `stop-loss-strategies`, `trailing-stops`, `risk-reward-ratio`, `trading-discipline` (loss limit और checklist), `portfolio-review` (portfolio जाँच) |
 | **Derivatives** | `fno-options-analysis`, `options-strategies` |
 | **भारत की ज़रूरी बातें** | `trading-costs` (charges), `indian-tax-for-traders` (टैक्स), `indian-market-structure` (नियम और समय), `broker-integration` |
 | **Research** | `fundamental-screening`, `ipo-analysis` |

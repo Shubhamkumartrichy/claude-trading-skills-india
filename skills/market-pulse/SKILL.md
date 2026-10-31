@@ -30,7 +30,8 @@ numbers.
 1. **Broker MCP** for index quotes and candles (NIFTY 50, NIFTY BANK, INDIA VIX and sector indices).
 2. **ta.py** with yfinance: `NIFTY`, `BANKNIFTY`, `SENSEX`, `INDIAVIX`, `NIFTYIT`, `NIFTYAUTO`,
    `NIFTYPHARMA`, `NIFTYFMCG`, `NIFTYMETAL`, `NIFTYREALTY`, `NIFTYENERGY`, `NIFTYPSUBANK`,
-   `NIFTYINFRA`, `NIFTYMEDIA`.
+   `NIFTYINFRA`, `NIFTYMIDCAP150`, `NIFTYSMALLCAP250` (Yahoo has no history for NIFTY MEDIA or
+   MIDCAP 100). For the full sector rotation table, run `sector-rotation`.
 3. **Web (WebSearch/WebFetch)** for GIFT Nifty, FII/DII provisional figures (published by NSE each
    evening), the F&O ban list, the results calendar, bulk and block deals, and the RBI and economic
    calendars. nseindia.com blocks scripted requests, so use news or broker pages that republish the

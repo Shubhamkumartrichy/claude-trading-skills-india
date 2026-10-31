@@ -30,3 +30,8 @@ jobs:
           python skills/fno-options-analysis/scripts/options.py expiries NIFTY --from 2026-11-01
           python skills/position-sizing/scripts/risk.py journal examples/sample_journal.csv
           python skills/indian-tax-for-traders/scripts/tax.py tradebook examples/sample_tradebook.csv
+          python skills/market-regime/scripts/regime.py status --csv examples/sample_ohlcv.csv
+          python skills/sector-rotation/scripts/sectors.py rotation --csv-dir tests/fixtures/sector_indices
+          python skills/breakout-planner/scripts/breakout.py check --csv examples/sample_ohlcv.csv
+          python skills/trading-discipline/scripts/discipline.py review examples/sample_journal.csv
+          python skills/portfolio-review/scripts/portfolio.py review examples/sample_holdings.csv

@@ -6,10 +6,10 @@
 
 **Turn Claude into a Dalal Street analyst that gets the maths right.**
 
-18 skills · 5 tested calculators · NSE/BSE · NIFTY F&O · exact STT & charges · Indian tax · Groww / Zerodha / Dhan / Upstox
+23 skills · 10 tested calculators · NSE/BSE · NIFTY F&O · exact STT & charges · Indian tax · Groww / Zerodha / Dhan / Upstox
 
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?logo=claude&logoColor=white)](#quick-start)
-[![Skills](https://img.shields.io/badge/skills-18-2563EB)](#skills)
+[![Skills](https://img.shields.io/badge/skills-23-2563EB)](#skills)
 [![Tests](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml/badge.svg)](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](#calculators)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-22C55E)](#calculators)
@@ -99,6 +99,9 @@ Install the whole pack. Several skills call scripts that live in sibling skills 
 | "₹2.4L LTCG, ₹60k STCG, ₹1.1L F&O loss, ₹18L salary. My tax?" | New-regime estimate with set-off steps, the ₹1.25L exemption, 87A rules, ITR form, carry-forward |
 | "Which holdings should I sell before March for the LTCG exemption?" | Tax-harvesting plan from your holdings CSV, including lots that turn long-term soon |
 | "Pre-market brief" | GIFT Nifty, FII/DII flows, India VIX, NIFTY levels, ban list, events, with a regime label |
+| "Is NIFTY in a confirmed uptrend? How much should I deploy?" | Distribution days, follow-through status, risk score, exposure ceiling and max new positions |
+| "Is POLYCAB setting up for a breakout?" | Stage 2 checklist, VCP contractions, pivot, and a GTT order plan sized to your risk |
+| "Review my portfolio" | Stock, sector and group concentration, LTCG countdown, beta, drawdown, tax-aware rebalance |
 | "Should I apply for this IPO?" | RHP checklist, valuation vs peers, subscription reading, allotment odds, lock-in dates |
 | "Where do I put my stop, GTT or SL?" | Structure/ATR stop plus Indian execution realities: DAY validity, GTT limits, circuits, gaps |
 
@@ -127,20 +130,25 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 
 <a id="skills"></a>
 
-## 🧩 The 18 skills
+## 🧩 The 23 skills
 
 | Group | Skill | What it does |
 |---|---|---|
 | **Analyst** | `india-market-analyst` | Orchestrator: full analysis, routing, ground rules, output template |
 | | `market-pulse` | Pre-market and post-market brief: GIFT Nifty, FII/DII, VIX, breadth, sectors, regime |
+| **Market timing** | `market-regime` | NIFTY distribution days, follow-through days, top-risk score, exposure ceiling |
+| | `sector-rotation` | NSE sectoral indices vs NIFTY: relative strength, RRG quadrants, risk-on vs defensive tilt |
 | **Charts** | `technical-analysis` | Trend, S/R clusters, gaps, indicator dashboard, ATR stops, circuit and gap checks |
 | | `multi-timeframe-analysis` | Weekly → daily → 75-minute screens with a 6-point confluence score |
 | | `rsi-divergence` | Regular and hidden divergences, found automatically, with trading rules |
 | | `fibonacci-trading` | Auto-swing retracements and trend-based extensions, confluence ladder |
+| | `breakout-planner` | Stage 2 trend template, VCP and flat bases, pivot, GTT breakout plan with circuit-band checks |
 | **Risk** | `position-sizing` | Fixed-fractional with costs, F&O lots, leverage, gap risk, Kelly, journal stats |
 | | `stop-loss-strategies` | Where to put the stop, and how GTT, SL and SL-M really behave in India |
 | | `trailing-stops` | R-multiple ladder, ATR, structure and chandelier trails |
 | | `risk-reward-ratio` | R after costs, scale-outs, breakeven win rate, expectancy |
+| | `trading-discipline` | Daily/weekly loss circuit breaker, pre-trade checklist, performance review by setup |
+| | `portfolio-review` | Concentration, sector and market-cap mix, LTCG countdown, beta, drawdown, tax-aware rebalance |
 | **Derivatives** | `fno-options-analysis` | Option chains, PCR, max pain, VIX, IV, Greeks, expiries, OI buildup, SEBI F&O rules |
 | | `options-strategies` | Strategy matrix by view and volatility, expiry-day dynamics, management, events |
 | **India essentials** | `trading-costs` | STT, exchange, SEBI, stamp, GST and DP charges for 5 brokers, breakevens, MTF |
@@ -154,7 +162,7 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 
 ## 🧮 Calculators
 
-Five standard-library Python engines (Python 3.10+, no installs). Claude runs them, and you can too:
+Ten standard-library Python engines (Python 3.10+, no installs). Claude runs them, and you can too:
 
 ```bash
 # Charges and breakeven: zerodha | groww | angelone | upstox | dhan | all
@@ -173,9 +181,18 @@ python3 skills/position-sizing/scripts/risk.py size --capital 500000 --risk-pct 
 
 # Tax: estimate, tradebook FIFO, turnover, harvesting
 python3 skills/indian-tax-for-traders/scripts/tax.py estimate --salary 1800000 --stcg 60000 --ltcg 240000 --fno -110000
+
+# Market regime and sector rotation
+python3 skills/market-regime/scripts/regime.py status --symbol NIFTY --vix 14.2
+python3 skills/sector-rotation/scripts/sectors.py rotation
+
+# Breakout setups, trading discipline, portfolio review
+python3 skills/breakout-planner/scripts/breakout.py check --symbol POLYCAB --benchmark NIFTY
+python3 skills/trading-discipline/scripts/discipline.py breaker examples/sample_journal.csv --capital 500000
+python3 skills/portfolio-review/scripts/portfolio.py review examples/sample_holdings.csv --cash 200000
 ```
 
-**Trust but verify:** the 80 unit tests pin hand-checked numbers, and the indicators match the
+**Trust but verify:** the 198 unit tests pin hand-checked numbers, and the indicators match the
 `ta` library to 13 significant digits. Run `python3 -m unittest discover -s tests`. Sample data is in
 [examples/](examples/).
 

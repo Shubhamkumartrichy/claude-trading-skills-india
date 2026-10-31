@@ -4,7 +4,8 @@ description: |
   Master workflow for analysing Indian stocks, indices and derivatives on NSE/BSE. Routes to the
   specialised skills in this pack: technical analysis, multi-timeframe, RSI divergence, Fibonacci,
   position sizing, stop-loss, trailing stops, risk-reward, F&O option chains, options strategies,
-  trading costs, tax, market structure, market pulse, fundamentals, IPOs and broker integration.
+  trading costs, tax, market structure, market pulse, market regime, sector rotation, breakout
+  planning, trading discipline, portfolio review, fundamentals, IPOs and broker integration.
 
   Use whenever the user asks to analyse, check or plan a trade in an Indian stock, index (NIFTY,
   BANKNIFTY, SENSEX) or F&O contract: "analyze RELIANCE", "should I buy HDFCBANK", "what's the setup
@@ -61,10 +62,13 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Stage | What to do | Skill / script |
 |---|---|---|
 | Context | NIFTY/sector trend, India VIX, FII/DII flows, event calendar | `market-pulse` |
+| Regime | Distribution days, follow-through, exposure ceiling | `market-regime` (`regime.py status`) |
+| Sectors | Which NSE sectors lead or lag NIFTY | `sector-rotation` (`sectors.py rotation`) |
 | Structure | Weekly bias → daily setup → 75-min/15-min entry | `multi-timeframe-analysis` (`ta.py mtf`) |
 | Technicals | Trend, levels, indicator dashboard, scenarios | `technical-analysis` (`ta.py summary`) |
 | Momentum | Regular/hidden RSI divergences | `rsi-divergence` (`ta.py divergence`) |
 | Levels | Retracement entries, extension targets | `fibonacci-trading` (`ta.py fib`) |
+| Setup | Stage 2 trend template, VCP/flat base, pivot, breakout plan | `breakout-planner` (`breakout.py check`) |
 | Quality | Fundamentals and governance red flags (investing horizon) | `fundamental-screening` |
 | Derivatives | OI, PCR, max pain, IV, expected move | `fno-options-analysis` (`options.py`) |
 | Decision | Buy / sell / hold / wait, with explicit triggers | this skill |
@@ -72,11 +76,14 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Stops | Initial stop, GTT mechanics, trailing plan | `stop-loss-strategies`, `trailing-stops` |
 | Targets | R:R after costs, expectancy | `risk-reward-ratio` (`risk.py rr`) |
 | Costs/tax | Charges, breakeven, STCG vs LTCG timing | `trading-costs`, `indian-tax-for-traders` |
+| Gate | Loss limits, pre-trade checklist before any order ticket | `trading-discipline` (`discipline.py gate`) |
 
 Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 `../position-sizing/scripts/risk.py`, `../fno-options-analysis/scripts/options.py`,
-`../trading-costs/scripts/charges.py`, `../indian-tax-for-traders/scripts/tax.py`. All are
-standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
+`../trading-costs/scripts/charges.py`, `../indian-tax-for-traders/scripts/tax.py`,
+`../market-regime/scripts/regime.py`, `../sector-rotation/scripts/sectors.py`,
+`../breakout-planner/scripts/breakout.py`, `../trading-discipline/scripts/discipline.py`,
+`../portfolio-review/scripts/portfolio.py`. All are standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
 
 ## Routing table
 
@@ -98,7 +105,12 @@ standard-library Python. Run them instead of doing arithmetic by hand, and show 
 | "How's the market today / pre-market brief" | market-pulse | fno-options-analysis |
 | "Is X fundamentally good?" | fundamental-screening | — |
 | "Should I apply for this IPO?" | ipo-analysis | fundamental-screening |
-| "Connect Zerodha/Groww", "place an order" | broker-integration | — |
+| "Connect Zerodha/Groww", "place an order" | broker-integration | trading-discipline |
+| "Is the market in an uptrend? How much should I invest now?" | market-regime | market-pulse |
+| "Which sectors are leading?" | sector-rotation | market-regime |
+| "Is X a breakout / VCP? Plan the breakout" | breakout-planner | position-sizing, stop-loss-strategies |
+| "Can I trade today? Review my trades" | trading-discipline | position-sizing (`risk.py journal`) |
+| "Review my portfolio / rebalance my holdings" | portfolio-review | indian-tax-for-traders, sector-rotation |
 
 ## Output format (full analysis)
 

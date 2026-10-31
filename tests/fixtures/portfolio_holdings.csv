@@ -1,0 +1,8 @@
+symbol,buy_date,qty,buy_price,ltp,sector,mcap,group,pledged_qty,stop,series
+AAA,2024-01-10,100,1000,2000,Information Technology,large,Alpha,,1800,EQ
+AAA,2026-09-01,50,1800,2000,Information Technology,large,Alpha,,1800,EQ
+BBB,2025-12-10,200,400,500,Information Technology,mid,Alpha,,450,EQ
+CCC,2025-11-20,100,300,400,Financial Services,small,,,,EQ
+DDD,2024-05-05,300,500,350,Energy,small,,100,400,EQ
+TCS,2023-03-01,50,3200,3000,,,,,,EQ
+FFF,2026-10-01,1000,100,105,Industrials,500,,,,SM

@@ -1,0 +1,6 @@
+Client ID,AB1234
+Holdings statement as on 2026-11-01
+
+Symbol,ISIN,Sector,Quantity Available,Quantity Discrepant,Quantity Long Term,Quantity Pledged (Margin),Quantity Pledged (Loan),Average Price,Previous Closing Price,Unrealized P&L,Unrealized P&L Pct.
+INFY,INE009A01021,IT - Software,40,0,40,10,0,"1,450.50",1500,1980,3.41
+HDFCBANK,INE040A01034,Banks,60,0,20,0,5,1600,1700,6000,6.25
