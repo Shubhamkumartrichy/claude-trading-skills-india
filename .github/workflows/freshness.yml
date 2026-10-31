@@ -1,0 +1,33 @@
+name: data freshness
+
+# Indian market parameters (STT, exchange charges, lot sizes, holidays, tax slabs) change often.
+# On the 1st of every month, open an issue if anything is past its freshness window.
+on:
+  schedule:
+    - cron: "30 3 1 * *"   # 09:00 IST on the 1st
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: fresh
+        run: python tools/check_freshness.py --max-age-days 120 --report freshness.md
+      - name: Open an issue if stale
+        if: steps.fresh.outputs.stale == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create data-update --color FF9933 --description "Rates, lot sizes, holidays or rules changed" --force
+          if [ -z "$(gh issue list --label data-update --state open --json number --jq '.[].number')" ]; then
+            gh issue create --title "Monthly data check: market parameters need review" \
+              --label data-update --body-file freshness.md
+          fi

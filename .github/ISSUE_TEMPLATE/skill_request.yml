@@ -1,0 +1,20 @@
+name: "💡 Skill or feature idea"
+description: Suggest a new skill, calculator, broker profile or improvement
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want Claude to help with?
+      placeholder: "e.g. Analyse my mutual fund portfolio for overlap and expense ratio drag"
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example prompts you would type
+  - type: textarea
+    id: sources
+    attributes:
+      label: Rules, formulas or data sources it should use

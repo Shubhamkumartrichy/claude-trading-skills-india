@@ -1,0 +1,56 @@
+name: "📊 Rate, rule or holiday changed"
+description: STT, exchange charges, broker pricing, lot size, expiry day, holiday, tax slab or SEBI rule changed
+title: "[Data] "
+labels: ["data-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Indian market parameters change often, and these reports keep the skills accurate.
+        **An official source is required** (exchange circular, SEBI/CBDT notification, broker pricing page).
+  - type: dropdown
+    id: area
+    attributes:
+      label: What changed?
+      options:
+        - STT / exchange / SEBI / stamp charges
+        - Broker brokerage or DP charges
+        - F&O lot size
+        - Expiry day or contract rules
+        - Trading holiday or session timings
+        - Income-tax slabs, rates or rules
+        - SEBI / exchange rule (margins, surveillance, algo)
+        - Broker MCP endpoint or tools
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: old
+    attributes:
+      label: Current value in the repo
+      placeholder: "e.g. NIFTY lot size 65"
+  - type: input
+    id: new
+    attributes:
+      label: New value
+      placeholder: "e.g. NIFTY lot size 75"
+    validations:
+      required: true
+  - type: input
+    id: effective
+    attributes:
+      label: Effective date
+      placeholder: "e.g. 2027-01-01, from the Jan-2027 monthly series"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source link
+      placeholder: "https://nsearchives.nseindia.com/content/circulars/..."
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

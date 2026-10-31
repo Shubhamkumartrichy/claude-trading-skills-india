@@ -1,0 +1,36 @@
+name: "🐞 Bug or wrong number"
+description: A calculator gave a wrong result, crashed, or a skill gave incorrect guidance
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Skill or script
+      placeholder: "e.g. trading-costs/scripts/charges.py"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or prompt
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What you got
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected (with a source or contract note if it's a number)
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: "Python 3.12, macOS, Claude Code 2.x, broker MCP: Groww"

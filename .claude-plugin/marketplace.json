@@ -1,0 +1,14 @@
+{
+  "name": "india-trading-skills",
+  "owner": {
+    "name": "Shubham Kumar"
+  },
+  "plugins": [
+    {
+      "name": "india-trading-skills",
+      "source": "./",
+      "description": "Indian stock-market analysis skills for NSE/BSE equities, F&O, costs and tax.",
+      "version": "1.0.0"
+    }
+  ]
+}

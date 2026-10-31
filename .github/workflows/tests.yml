@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run unit tests (stdlib only, no installs)
+        run: python -m unittest discover -s tests -v
+      - name: Smoke-test every calculator CLI
+        run: |
+          python skills/trading-costs/scripts/charges.py --segment delivery --buy 1800 --sell 1900 --qty 100 --broker all
+          python skills/technical-analysis/scripts/ta.py summary --csv examples/sample_ohlcv.csv
+          python skills/fno-options-analysis/scripts/options.py chain examples/sample_option_chain.csv --spot 23050
+          python skills/fno-options-analysis/scripts/options.py expiries NIFTY --from 2026-11-01
+          python skills/position-sizing/scripts/risk.py journal examples/sample_journal.csv
+          python skills/indian-tax-for-traders/scripts/tax.py tradebook examples/sample_tradebook.csv
