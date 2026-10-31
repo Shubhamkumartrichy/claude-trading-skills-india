@@ -300,10 +300,6 @@ Pull requests are welcome, especially **rate and rule updates**. Indian market p
 every few months, and a fix with an official source link is the most valuable contribution there is.
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Credit: the original nine frameworks come from
-[nse-trading-skills](https://github.com/Bhala-Srinivash/nse-trading-skills) (MIT). This project
-rebuilds them for 2026 Indian market rules and adds the calculators and nine India-specific skills.
-
 ## ⭐ Star history
 
 If this saved you from a bad trade or a wrong tax estimate, a star helps other traders find it.
@@ -322,4 +318,4 @@ acting.
 
 ## License
 
-[MIT](LICENSE). Portions are adapted from nse-trading-skills (MIT).
+All skills and reference materials in this repository are provided for educational and research purposes.

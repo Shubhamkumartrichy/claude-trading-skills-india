@@ -26,7 +26,7 @@ git push -u origin main
 ## 2. Repo settings (10 minutes, big impact)
 
 - **About → Description:** `18 Claude skills that make Claude a Dalal Street analyst: NSE/BSE charts, NIFTY F&O, exact STT & charges, Indian tax, Groww/Zerodha/Dhan MCP. Tested, zero-dependency calculators.`
-- **About → Topics** (GitHub allows 20): `claude` `claude-code` `claude-skills` `agent-skills` `anthropic` `mcp` `nse` `bse` `nifty` `sensex` `indian-stock-market` `stock-market` `trading` `options-trading` `zerodha` `groww` `technical-analysis` `income-tax` `fintech` `india`
+- **About → Topics** (GitHub allows 20): `claude-code` `claude-skills` `agent-skills` `mcp` `ai-trading` `indian-stock-market` `nse` `bse` `nse-india` `nifty` `sensex` `stock-market` `trading` `trading-strategies` `options-trading` `technical-analysis` `risk-management` `zerodha` `groww` `income-tax`
 - **Settings → General → Social preview:** upload `docs/assets/social-preview.png`. This is the card people see on X, LinkedIn and WhatsApp.
 - **Settings → General → Features:** enable **Discussions**. The issue template links to it.
 - **Settings → Code security:** enable **Private vulnerability reporting**. SECURITY.md points to it.
@@ -64,8 +64,7 @@ calculators. Open source. 🧵👇 [banner + demo]
 4/ Connects to Groww, Zerodha Kite, Dhan and Upstox MCP for live data. It never places an order
 without showing you a full ticket and getting a "yes".
 
-5/ 5 zero-dependency Python calculators, 80 tests, MIT licence. Built on top of
-@<original author handle, if they have one>'s nse-trading-skills.
+5/ 5 zero-dependency Python calculators, 80 tests, MIT licence.
 ⭐ github.com/<you>/india-trading-skills
 
 ### LinkedIn

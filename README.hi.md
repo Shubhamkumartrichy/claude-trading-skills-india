@@ -96,4 +96,6 @@ STT, lot size, छुट्टियाँ और broker charges हर कु�
 SEBI-registered investment adviser या research analyst की ओर से नहीं हैं। Trading में भारी नुकसान का
 जोखिम है। कोई भी कदम उठाने से पहले अपने broker, exchanges और Chartered Accountant से दरें और नियम जाँच लें।
 
-License: [MIT](LICENSE)
+## License
+
+All skills and reference materials in this repository are provided for educational and research purposes.
