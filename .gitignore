@@ -12,3 +12,7 @@ venv/
 # Private keys
 *.pem
 *.key
+
+# Local launch notes (never pushed)
+LAUNCH_KIT.md
+launch/

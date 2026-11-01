@@ -33,6 +33,10 @@ maths instead of guessing. Some of what it knows that most tools get wrong:
 - 📅 NIFTY weeklies expire on **Tuesday**, but 2026 had six Tuesday holidays. The expiry calendar shifts them for you.
 - 🧾 An F&O loss can offset your capital gains but **never your salary**, and only if you file on time.
 
+<p align="center">
+  <img src="docs/assets/demo.svg" alt="Animated demo: broker charges comparison, holiday-adjusted NIFTY expiries and an Indian tax estimate, from the bundled calculators" width="100%">
+</p>
+
 > Works in **Claude Code** as a plugin. The skills use the standard `SKILL.md` format, so any agent
 > that supports Agent Skills can load them.
 
@@ -192,7 +196,7 @@ python3 skills/trading-discipline/scripts/discipline.py breaker examples/sample_
 python3 skills/portfolio-review/scripts/portfolio.py review examples/sample_holdings.csv --cash 200000
 ```
 
-**Trust but verify:** the 198 unit tests pin hand-checked numbers, and the indicators match the
+**Trust but verify:** the 200 unit tests pin hand-checked numbers, and the indicators match the
 `ta` library to 13 significant digits. Run `python3 -m unittest discover -s tests`. Sample data is in
 [examples/](examples/).
 

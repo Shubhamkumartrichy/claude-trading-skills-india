@@ -2,7 +2,7 @@
 
 ## 1.1.0 — 2026-11-01
 
-Five new skills, each with a standard-library calculator and tests (23 skills, 198 tests).
+Five new skills, each with a standard-library calculator and tests (23 skills, 200 tests).
 
 - `market-regime` (`regime.py`): NIFTY/BANKNIFTY/SENSEX distribution days, follow-through days with
   an India-calibrated threshold, top-risk score, exposure ceiling. Falls back to NIFTYBEES/BANKBEES
@@ -17,6 +17,8 @@ Five new skills, each with a standard-library calculator and tests (23 skills, 1
 - `portfolio-review` (`portfolio.py`): concentration, sector, group and market-cap limits, LTCG
   countdown, beta/volatility/drawdown, correlation clusters, portfolio heat, tax-aware rebalance.
   Reads Zerodha Console XLSX exports.
+- README demo: `tools/make_demo.py` renders `docs/assets/demo.svg`, an animated terminal recording
+  built from real calculator output.
 - `ta.py`: added NIFTYMIDCAP150 and NIFTYSMALLCAP250 tickers; noted that Yahoo has no history for
   NIFTY MEDIA and MIDCAP 100.
 

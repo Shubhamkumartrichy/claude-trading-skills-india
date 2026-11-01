@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="995" height="467" viewBox="0 0 995 467" role="img" aria-label="India Trading Skills calculators: broker charges, NIFTY expiries and tax estimate">
+<title>India Trading Skills calculators</title>
+<rect width="995" height="467" rx="10" fill="#0d1117"/>
+<circle cx="20" cy="18" r="6" fill="#ff5f56"/><circle cx="40" cy="18" r="6" fill="#ffbd2e"/><circle cx="60" cy="18" r="6" fill="#27c93f"/>
+<text x="498" y="22" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12" text-anchor="middle">india-trading-skills · real calculator output</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="13" xml:space="preserve" style="white-space:pre">
+<g opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.00000;0.32802"/>
+<text x="20" y="52" fill="#8b949e"># You ask Claude: “Buy 200 INFY at 1,480, sell at 1,520. Which broker is cheapest?”</text>
+<clipPath id="type0"><rect x="20" y="52" height="23" width="0"><animate attributeName="width" dur="26.34s" repeatCount="indefinite" values="0;0;911;911" keyTimes="0;0.02278;0.10630;1"/></rect></clipPath>
+<text x="20" y="71" clip-path="url(#type0)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> python3 skills/trading-costs/scripts/charges.py --segment delivery --buy 1480 --sell 1520 --qty 200 --broker all</tspan></text>
+<text x="20" y="90" fill="#8b949e" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.11769;0.32802"/></text>
+<text x="20" y="109" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.11997;0.32802"/>DELIVERY on NSE: buy 1480 / sell 1520 x 200  (rates as of 2026-10-31)</text>
+<text x="20" y="128" fill="#8b949e" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.12225;0.32802"/>Broker             Brokerage     Total chg         Net P&amp;L   Breakeven</text>
+<text x="20" y="147" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.12453;0.32802"/>Dhan                   ₹0.00       ₹681.59       ₹7,318.41     1483.37</text>
+<text x="20" y="166" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.12680;0.32802"/>Zerodha (Kite)         ₹0.00       ₹682.18       ₹7,317.82     1483.37</text>
+<text x="20" y="185" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.12908;0.32802"/>Groww                 ₹40.00       ₹737.64       ₹7,262.36     1483.65</text>
+<text x="20" y="204" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.13136;0.32802"/>Angel One             ₹40.00       ₹737.64       ₹7,262.36     1483.65</text>
+<text x="20" y="223" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.13364;0.32802"/>Upstox                ₹40.00       ₹737.64       ₹7,262.36     1483.65</text>
+<text x="20" y="242" fill="#8b949e" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.13591;0.32802"/>Statutory charges (STT, exchange, SEBI, stamp, GST on those) are identical across brokers.</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.32802;0.65148"/>
+<text x="20" y="52" fill="#8b949e"># You ask Claude: “When are the next NIFTY expiries?”</text>
+<clipPath id="type1"><rect x="20" y="52" height="23" width="0"><animate attributeName="width" dur="26.34s" repeatCount="indefinite" values="0;0;792;792" keyTimes="0;0.35080;0.43432;1"/></rect></clipPath>
+<text x="20" y="71" clip-path="url(#type1)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> python3 skills/fno-options-analysis/scripts/options.py expiries NIFTY --from 2026-11-01 --count 6</tspan></text>
+<text x="20" y="90" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.44571;0.65148"/>NIFTY expiries (holidays verified to 2026-12-31):</text>
+<text x="20" y="109" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.44799;0.65148"/>  2026-11-03 Tue  weekly</text>
+<text x="20" y="128" fill="#3fb950" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.45027;0.65148"/>  2026-11-09 Mon  weekly (moved: holiday)</text>
+<text x="20" y="147" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.45254;0.65148"/>  2026-11-17 Tue  weekly</text>
+<text x="20" y="166" fill="#3fb950" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.45482;0.65148"/>  2026-11-23 Mon  monthly (moved: holiday)</text>
+<text x="20" y="185" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.45710;0.65148"/>  2026-12-01 Tue  weekly</text>
+<text x="20" y="204" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.45938;0.65148"/>  2026-12-08 Tue  weekly</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.65148;1.00000"/>
+<text x="20" y="52" fill="#8b949e"># You ask Claude: “18L salary, 60k STCG, 2.4L LTCG, 1.1L F&amp;O loss. My tax?”</text>
+<clipPath id="type2"><rect x="20" y="52" height="23" width="0"><animate attributeName="width" dur="26.34s" repeatCount="indefinite" values="0;0;966;966" keyTimes="0;0.67426;0.75778;1"/></rect></clipPath>
+<text x="20" y="71" clip-path="url(#type2)"><tspan fill="#58a6ff">$</tspan><tspan fill="#e6edf3"> python3 skills/indian-tax-for-traders/scripts/tax.py estimate --salary 1800000 --stcg 60000 --ltcg 240000 --fno -110000</tspan></text>
+<text x="20" y="90" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.76917;1.00000"/>Tax estimate — new regime</text>
+<text x="20" y="109" fill="#8b949e" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.77145;1.00000"/>----------------------------------------------------</text>
+<text x="20" y="128" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.77373;1.00000"/>Normal income (slab-taxed)                ₹17,25,000</text>
+<text x="20" y="147" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.77601;1.00000"/>STCG after set-off                                ₹0</text>
+<text x="20" y="166" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.77828;1.00000"/>LTCG after set-off                         ₹1,90,000</text>
+<text x="20" y="185" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.78056;1.00000"/>  LTCG taxable (above ₹1.25L)                ₹65,000</text>
+<text x="20" y="204" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.78284;1.00000"/>Total income                              ₹19,15,000</text>
+<text x="20" y="223" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.78512;1.00000"/>Tax on normal income                       ₹1,45,000</text>
+<text x="20" y="242" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.78740;1.00000"/>Tax on STCG @20%                                  ₹0</text>
+<text x="20" y="261" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.78967;1.00000"/>Tax on LTCG @12.5%                            ₹8,125</text>
+<text x="20" y="280" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.79195;1.00000"/>Rebate u/s 87A                                    ₹0</text>
+<text x="20" y="299" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.79423;1.00000"/>Surcharge                                         ₹0</text>
+<text x="20" y="318" fill="#e6edf3" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.79651;1.00000"/>Health &amp; education cess 4%                    ₹6,125</text>
+<text x="20" y="337" fill="#8b949e" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.79879;1.00000"/>----------------------------------------------------</text>
+<text x="20" y="356" fill="#3fb950" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.80106;1.00000"/>TOTAL TAX                                  ₹1,59,250</text>
+<text x="20" y="375" fill="#3fb950" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.80334;1.00000"/> • F&amp;O loss ₹60,000 set off against STCG.</text>
+<text x="20" y="394" fill="#3fb950" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.80562;1.00000"/> • F&amp;O loss ₹50,000 set off against LTCG.</text>
+<text x="20" y="413" fill="#d29922" opacity="0"><animate attributeName="opacity" dur="26.34s" repeatCount="indefinite" calcMode="discrete" values="0;1;0" keyTimes="0;0.80790;1.00000"/> ⚠ Estimate only — confirm with a Chartered Accountant before filing.</text>
+</g>
+</g></svg>
