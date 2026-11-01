@@ -325,8 +325,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 If this saved you from a bad trade or a wrong tax estimate, a star helps other traders find it.
 
-<a href="https://star-history.com/#Shubhamkumartrichy/claude-trading-skills-india&Date">
-  <img src="https://api.star-history.com/svg?repos=Shubhamkumartrichy/claude-trading-skills-india&type=Date" alt="Star history chart" width="600">
+<a href="https://www.star-history.com/?repos=Shubhamkumartrichy%2Fclaude-trading-skills-india&type=date&legend=bottom-right">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Shubhamkumartrichy/claude-trading-skills-india&type=date&theme=dark&legend=bottom-right" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Shubhamkumartrichy/claude-trading-skills-india&type=date&legend=bottom-right" />
+    <img alt="Star history chart" src="https://api.star-history.com/chart?repos=Shubhamkumartrichy/claude-trading-skills-india&type=date&legend=bottom-right" width="600" />
+  </picture>
 </a>
 
 ## ⚠️ Disclaimer
