@@ -1,7 +1,7 @@
 {
   "name": "india-trading-skills",
-  "version": "1.1.0",
-  "description": "23 Claude skills for Indian markets (NSE/BSE): technical analysis, market regime, sector rotation, VCP breakouts, F&O and option chains, position sizing, stops, trading discipline, portfolio review, exact trading charges, Indian tax, market structure, IPOs, fundamentals and broker MCP integration (Groww, Zerodha, Dhan, Upstox). Ships tested, zero-dependency Python calculators.",
+  "version": "1.2.0",
+  "description": "29 Claude skills for Indian markets (NSE/BSE): technical analysis, market regime, breadth, sector rotation, FII/DII flows, momentum scans, VCP breakouts, results reactions, F&O and option chains, pair trading, backtesting, position sizing, stops, trading discipline, portfolio review, exact trading charges, Indian tax, market structure, IPOs, fundamentals and broker MCP integration (Groww, Zerodha, Dhan, Upstox). Ships tested, zero-dependency Python calculators.",
   "author": {
     "name": "Shubham Kumar"
   },
@@ -36,7 +36,13 @@
     "claude-code",
     "claude-skills",
     "agent-skills",
-    "skills"
+    "skills",
+    "market-breadth",
+    "fii-dii",
+    "momentum",
+    "backtesting",
+    "pair-trading",
+    "earnings"
   ],
   "homepage": "https://github.com/Shubhamkumartrichy/claude-trading-skills-india",
   "repository": "https://github.com/Shubhamkumartrichy/claude-trading-skills-india"

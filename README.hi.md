@@ -6,7 +6,7 @@
 
 **Claude को एक ऐसा Dalal Street analyst बनाइए जो हिसाब सही लगाए।**
 
-23 skills · 10 tested calculators · NSE/BSE · NIFTY F&O · सटीक STT और charges · भारतीय टैक्स · Groww / Zerodha / Dhan / Upstox
+29 skills · 16 tested calculators · NSE/BSE · NIFTY F&O · सटीक STT और charges · भारतीय टैक्स · Groww / Zerodha / Dhan / Upstox
 
 [English README](README.md)
 
@@ -63,17 +63,17 @@ Broker नहीं जोड़ना? `pip install yfinance` कर लें,
 | "Market खुलने से पहले की रिपोर्ट दो" | GIFT Nifty, FII/DII flows, India VIX, NIFTY के अहम स्तर, ban list, आज के events |
 | "इस IPO में apply करूँ?" | RHP checklist, peers से valuation, subscription का मतलब, allotment की संभावना, lock-in तारीखें |
 
-## 🧩 23 skills एक नज़र में
+## 🧩 29 skills एक नज़र में
 
 | समूह | Skills |
 |---|---|
 | **Analyst** | `india-market-analyst` (पूरा विश्लेषण), `market-pulse` (बाज़ार का हाल) |
-| **Market timing** | `market-regime` (बाज़ार का trend और कितना निवेश करें), `sector-rotation` (कौन-से sector आगे हैं) |
-| **Charts** | `technical-analysis`, `multi-timeframe-analysis`, `rsi-divergence`, `fibonacci-trading`, `breakout-planner` (VCP breakout) |
+| **Market timing** | `market-regime` (बाज़ार का trend और कितना निवेश करें), `sector-rotation` (कौन-से sector आगे हैं), `market-breadth` (rally कितनी चौड़ी है), `fii-dii-flows` (FII/DII पैसा और positioning) |
+| **Charts** | `technical-analysis`, `multi-timeframe-analysis`, `rsi-divergence`, `fibonacci-trading`, `breakout-planner` (VCP breakout), `momentum-scanner` (momentum और gap-up stocks) |
 | **Risk** | `position-sizing`, `stop-loss-strategies`, `trailing-stops`, `risk-reward-ratio`, `trading-discipline` (loss limit और checklist), `portfolio-review` (portfolio जाँच) |
-| **Derivatives** | `fno-options-analysis`, `options-strategies` |
+| **Derivatives** | `fno-options-analysis`, `options-strategies`, `pair-trading` (futures से pair trade) |
 | **भारत की ज़रूरी बातें** | `trading-costs` (charges), `indian-tax-for-traders` (टैक्स), `indian-market-structure` (नियम और समय), `broker-integration` |
-| **Research** | `fundamental-screening`, `ipo-analysis` |
+| **Research** | `fundamental-screening`, `ipo-analysis`, `results-season` (results पर शेयर की प्रतिक्रिया), `backtest-lab` (strategy की backtesting) |
 
 हर skill का पूरा विवरण [English README](README.md#skills) में है।
 

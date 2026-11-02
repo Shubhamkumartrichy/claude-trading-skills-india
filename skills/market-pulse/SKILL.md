@@ -36,6 +36,8 @@ numbers.
    evening), the F&O ban list, the results calendar, bulk and block deals, and the RBI and economic
    calendars. nseindia.com blocks scripted requests, so use news or broker pages that republish the
    figures, and cite them.
+4. **Deeper reads:** `fii-dii-flows` for flow streaks and the FII index-futures long/short ratio from
+   NSE's participant-wise OI file, and `market-breadth` for a breadth health score.
 
 ```bash
 for s in NIFTY BANKNIFTY INDIAVIX NIFTYIT NIFTYAUTO NIFTYPHARMA NIFTYFMCG NIFTYMETAL NIFTYREALTY; do

@@ -35,3 +35,9 @@ jobs:
           python skills/breakout-planner/scripts/breakout.py check --csv examples/sample_ohlcv.csv
           python skills/trading-discipline/scripts/discipline.py review examples/sample_journal.csv
           python skills/portfolio-review/scripts/portfolio.py review examples/sample_holdings.csv
+          python skills/market-breadth/scripts/breadth.py status --csv-dir tests/fixtures/breadth_universe --benchmark-csv tests/fixtures/breadth_nifty.csv
+          python skills/fii-dii-flows/scripts/flows.py participants --oi tests/fixtures/flows_participant_oi
+          python skills/momentum-scanner/scripts/momentum.py scan --csv-dir tests/fixtures/momentum_universe --benchmark-csv tests/fixtures/momentum_nifty.csv
+          python skills/results-season/scripts/results.py scan --events tests/fixtures/results_events.csv --csv-dir tests/fixtures --prefix results_
+          python skills/pair-trading/scripts/pairs.py test BANKB BANKA --csv-dir tests/fixtures/pairs_stocks
+          python skills/backtest-lab/scripts/backtest.py run --csv tests/fixtures/backtest_trend.csv --strategy sma-cross --params fast=10 slow=40

@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.2.0 — 2026-11-02
+
+Six new skills, each with a standard-library calculator and tests (29 skills, 378 tests).
+
+- `fii-dii-flows` (`flows.py`): FII/DII cash-flow streaks and DII absorption, the FII index-futures
+  long/short ratio from NSE's participant-wise OI files (format checked against NSE's archive),
+  quarterly shareholding changes and pledge flags, bulk/block deal aggregation.
+- `market-breadth` (`breadth.py`): % of stocks above 20/50/200 DMA, A/D line with index divergence,
+  new 52-week highs/lows, McClellan oscillator and summation index, Zweig breadth thrust, uptrend
+  ratio, sector participation and a 0–100 health score. Also works from an exchange A/D file.
+- `momentum-scanner` (`momentum.py`): 4% momentum bursts, episodic-pivot gaps on 3× volume, a 1–99
+  relative-strength rating, upper-circuit and surveillance-band flags, liquidity filter, and a
+  hand-off to `breakout-planner`.
+- `results-season` (`results.py`): results-day reaction session from announcement timing and the
+  NSE holiday list, a 0–100 reaction score (A–D), post-results weekly drift setups, and a check for
+  results inside a holding window.
+- `pair-trading` (`pairs.py`): Engle–Granger cointegration with MacKinnon critical values, hedge
+  ratio stability, half-life, z-score signals, and a stock-futures execution plan with whole-lot
+  rounding, rollover and F&O-ban checks.
+- `backtest-lab` (`backtest.py`): six built-in strategies, next-bar-open fills, gap-through stops,
+  exact Indian charges per trade, parameter sweeps with plateau checks, walk-forward and Monte Carlo.
+
 ## 1.1.0 — 2026-11-01
 
 Five new skills, each with a standard-library calculator and tests (23 skills, 200 tests).

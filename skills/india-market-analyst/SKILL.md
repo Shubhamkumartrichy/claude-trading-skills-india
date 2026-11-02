@@ -4,8 +4,9 @@ description: |
   Master workflow for analysing Indian stocks, indices and derivatives on NSE/BSE. Routes to the
   specialised skills in this pack: technical analysis, multi-timeframe, RSI divergence, Fibonacci,
   position sizing, stop-loss, trailing stops, risk-reward, F&O option chains, options strategies,
-  trading costs, tax, market structure, market pulse, market regime, sector rotation, breakout
-  planning, trading discipline, portfolio review, fundamentals, IPOs and broker integration.
+  trading costs, tax, market structure, market pulse, market regime, sector rotation, market
+  breadth, FII/DII flows, momentum scans, breakout planning, results reactions, pair trading,
+  backtesting, trading discipline, portfolio review, fundamentals, IPOs and broker integration.
 
   Use whenever the user asks to analyse, check or plan a trade in an Indian stock, index (NIFTY,
   BANKNIFTY, SENSEX) or F&O contract: "analyze RELIANCE", "should I buy HDFCBANK", "what's the setup
@@ -64,11 +65,15 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Context | NIFTY/sector trend, India VIX, FII/DII flows, event calendar | `market-pulse` |
 | Regime | Distribution days, follow-through, exposure ceiling | `market-regime` (`regime.py status`) |
 | Sectors | Which NSE sectors lead or lag NIFTY | `sector-rotation` (`sectors.py rotation`) |
+| Breadth | % of stocks above DMAs, A/D line, new highs/lows, health score | `market-breadth` (`breadth.py status`) |
+| Flows | FII/DII cash flows, FII index-futures long/short, bulk/block deals | `fii-dii-flows` (`flows.py`) |
 | Structure | Weekly bias → daily setup → 75-min/15-min entry | `multi-timeframe-analysis` (`ta.py mtf`) |
 | Technicals | Trend, levels, indicator dashboard, scenarios | `technical-analysis` (`ta.py summary`) |
 | Momentum | Regular/hidden RSI divergences | `rsi-divergence` (`ta.py divergence`) |
 | Levels | Retracement entries, extension targets | `fibonacci-trading` (`ta.py fib`) |
+| Ideas | Momentum bursts, episodic pivots, RS leaders across a universe | `momentum-scanner` (`momentum.py scan`) |
 | Setup | Stage 2 trend template, VCP/flat base, pivot, breakout plan | `breakout-planner` (`breakout.py check`) |
+| Results | Results-day reaction score, post-results drift, results in the holding window | `results-season` (`results.py`) |
 | Quality | Fundamentals and governance red flags (investing horizon) | `fundamental-screening` |
 | Derivatives | OI, PCR, max pain, IV, expected move | `fno-options-analysis` (`options.py`) |
 | Decision | Buy / sell / hold / wait, with explicit triggers | this skill |
@@ -76,6 +81,7 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Stops | Initial stop, GTT mechanics, trailing plan | `stop-loss-strategies`, `trailing-stops` |
 | Targets | R:R after costs, expectancy | `risk-reward-ratio` (`risk.py rr`) |
 | Costs/tax | Charges, breakeven, STCG vs LTCG timing | `trading-costs`, `indian-tax-for-traders` |
+| Validate | Backtest the rule with Indian charges before trading it | `backtest-lab` (`backtest.py`) |
 | Gate | Loss limits, pre-trade checklist before any order ticket | `trading-discipline` (`discipline.py gate`) |
 
 Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
@@ -83,7 +89,10 @@ Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 `../trading-costs/scripts/charges.py`, `../indian-tax-for-traders/scripts/tax.py`,
 `../market-regime/scripts/regime.py`, `../sector-rotation/scripts/sectors.py`,
 `../breakout-planner/scripts/breakout.py`, `../trading-discipline/scripts/discipline.py`,
-`../portfolio-review/scripts/portfolio.py`. All are standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
+`../portfolio-review/scripts/portfolio.py`, `../market-breadth/scripts/breadth.py`,
+`../fii-dii-flows/scripts/flows.py`, `../momentum-scanner/scripts/momentum.py`,
+`../results-season/scripts/results.py`, `../pair-trading/scripts/pairs.py`,
+`../backtest-lab/scripts/backtest.py`. All are standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
 
 ## Routing table
 
@@ -111,6 +120,12 @@ Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 | "Is X a breakout / VCP? Plan the breakout" | breakout-planner | position-sizing, stop-loss-strategies |
 | "Can I trade today? Review my trades" | trading-discipline | position-sizing (`risk.py journal`) |
 | "Review my portfolio / rebalance my holdings" | portfolio-review | indian-tax-for-traders, sector-rotation |
+| "Is the rally broad? Market breadth?" | market-breadth | market-regime |
+| "Are FIIs buying or selling? FII long/short ratio?" | fii-dii-flows | market-pulse |
+| "Find momentum stocks / gap-ups today" | momentum-scanner | breakout-planner |
+| "How did X react to results? Results this week?" | results-season | fundamental-screening |
+| "Is HDFCBANK vs ICICIBANK a tradable pair?" | pair-trading | fno-options-analysis |
+| "Backtest this strategy" | backtest-lab | trading-costs, position-sizing |
 
 ## Output format (full analysis)
 
