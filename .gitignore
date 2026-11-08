@@ -16,3 +16,4 @@ venv/
 # Local launch notes (never pushed)
 LAUNCH_KIT.md
 launch/
+raw/

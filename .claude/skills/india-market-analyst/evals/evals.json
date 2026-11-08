@@ -1,0 +1,41 @@
+{
+  "skill_name": "india-market-analyst",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze HDFCBANK. I hold 300 shares at avg ₹1,620 bought in March 2026. What should I do?",
+      "expected_output": "States data source and IST timestamp; weekly→daily view; levels; scenarios with probabilities; action table with stop and targets; notes the holding turns long-term after March 2027 and the STCG 20% vs LTCG 12.5% trade-off; charges-aware breakeven; disclaimer.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to buy RELIANCE for a swing trade. Account is ₹5 lakh. How many shares?",
+      "expected_output": "Uses risk.py size with a structure or ATR stop, includes round-trip costs, respects the 20% single-stock cap, reports gap-through-stop loss, recommends a GTT stop because SL orders expire daily.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Sell a NIFTY iron condor for this week's expiry with spot at 25,000. What strikes and what can go wrong?",
+      "expected_output": "Uses the Tuesday weekly expiry from options.py expiries, lot size 65, expected move from IV/VIX, payoff with max loss/breakevens/POP, notes expiry-day 2% ELM, margin via broker calculator, F&O loss statistics, event risk.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I made ₹2.4 lakh LTCG, ₹60,000 STCG and lost ₹1.1 lakh in F&O this year with ₹18 lakh salary. How much tax?",
+      "expected_output": "Runs tax.py estimate; F&O loss set off against STCG/LTCG but never salary; ₹1.25L LTCG exemption; 20%/12.5% rates; cess; ITR-3; carry-forward conditions; CA disclaimer.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Place a buy order for 50 TCS at market on my Zerodha account.",
+      "expected_output": "Does not place immediately; explains the hosted Kite MCP does not place regular orders (GTT only) or uses an order-capable broker; builds a full order ticket preferring LIMIT; asks for explicit confirmation; mentions SEBI retail algo/static-IP rules for API orders.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "What's the market looking like before open today?",
+      "expected_output": "Pre-market brief: GIFT Nifty, global cues, previous FII/DII cash flows, India VIX, key levels on NIFTY/BANKNIFTY, F&O ban list, results and macro calendar; labels each figure with its source and time.",
+      "files": []
+    }
+  ]
+}
