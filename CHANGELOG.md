@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.3.0 — 2026-11-13
+
+Six new skills, each with a standard-library calculator and tests (35 skills, 560 tests).
+
+- `stock-screener` (`screen.py`): CANSLIM-India, value-dividend, dividend-growth-pullback, GARP and
+  quality-compounder screens on a Screener.in export, a safe `--where` filter language, near-misses,
+  pledge/small-cap/negative-net-worth gates, bank and NBFC handling, and Screener.in query text.
+- `macro-regime` (`macro.py`): a 6–24 month backdrop from crude, USD/INR, G-sec yields and curve,
+  US 10-year, India VIX, smallcap and bank leadership, cyclicals vs defensives and equity vs gold,
+  with regime labels (inflationary squeeze, easing tailwind, broadening, narrow, risk-off).
+- `market-valuation` (`valuation.py`): NIFTY P/E, P/B and dividend-yield percentiles with the 2021
+  consolidated-earnings break handled, yield gap vs the 10-year G-sec, market cap to GDP, and a 0–100
+  froth score (valuation, retail activity, IPOs, complacency, MTF leverage) with a posture.
+- `event-calendar` (`events.py`): holiday-adjusted expiries, exchange holidays, verified RBI MPC,
+  FOMC, US CPI/jobs and MSCI dates, rule-based India macro releases, tax dates, results windows,
+  a holding-window event-risk answer for `trading-discipline`, .ics export and a staleness check.
+- `thesis-tracker` (`thesis.py`): trade-idea lifecycle with an enforced state machine, written kill
+  criteria, review dates, catalysts and the LTCG countdown, post-mortems with luck-vs-skill
+  quadrants, stats, and export to the trading journal. Crash-safe JSON store with a backup.
+- `exhaustion-reversal` (`exhaustion.py`): parabolic-top score with upper-circuit streaks, holder
+  scale-out plans, F&O-only short plans in whole lots, washout bottoms and news-reaction failures.
+
 ## 1.2.0 — 2026-11-02
 
 Six new skills, each with a standard-library calculator and tests (29 skills, 378 tests).

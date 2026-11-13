@@ -79,7 +79,7 @@ yes/no flags are skipped, except where noted.
 | Regime (label from `market-regime`) | crash / panic / no-trade, for longs | Trading against risk-off or risk-on; sideways / volatile; unknown label |
 | F&O ban | Fresh F&O position in a ban-period stock | Cash trade in a ban stock; F&O with ban status unknown |
 | ASM / GSM / T2T (`--asm-gsm`) | Intraday (T2T/GSM can't be squared off) | Delivery |
-| Results / board meeting in window (`--event`) | — | Gap risk; IV crush for options |
+| Results / board meeting in window (`--event`; `event-calendar` `window` answers it) | — | Gap risk; IV crush for options |
 | Circuit-locked (`--circuit-locked`) | Always | — |
 | Expiry day (Tue NIFTY, Thu SENSEX) | — | Option buy on expiry; option sell (extra ELM). Auto-flagged on Tue/Thu if not stated |
 | MIS cut-off (`--segment intraday`, `--time`) | At or after 15:00 IST (auto square-off ~15:15–15:20) | Before 09:15 |

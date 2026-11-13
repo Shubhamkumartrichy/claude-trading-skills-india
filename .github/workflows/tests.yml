@@ -41,3 +41,9 @@ jobs:
           python skills/results-season/scripts/results.py scan --events tests/fixtures/results_events.csv --csv-dir tests/fixtures --prefix results_
           python skills/pair-trading/scripts/pairs.py test BANKB BANKA --csv-dir tests/fixtures/pairs_stocks
           python skills/backtest-lab/scripts/backtest.py run --csv tests/fixtures/backtest_trend.csv --strategy sma-cross --params fast=10 slow=40
+          python skills/stock-screener/scripts/screen.py run --csv tests/fixtures/screener_export.csv --preset quality-compounder
+          python skills/macro-regime/scripts/macro.py status --csv-dir tests/fixtures/macro_squeeze
+          python skills/market-valuation/scripts/valuation.py pe --csv tests/fixtures/valuation_nifty50_pe.csv
+          python skills/event-calendar/scripts/events.py month --month 2026-12
+          python skills/thesis-tracker/scripts/thesis.py hypothesis
+          python skills/exhaustion-reversal/scripts/exhaustion.py climax --csv tests/fixtures/exhaustion_universe/PARABOLIC.csv

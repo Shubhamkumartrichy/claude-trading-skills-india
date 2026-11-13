@@ -1,0 +1,7 @@
+symbol,name,price,market_cap_cr,pe,pb,dividend_yield,Distribution Ratio,roce,roe,debt_to_equity,sales_growth_3y,profit_growth_3y,profit_growth_5y,promoter_holding,pledge_pct,fcf
+ALPHAQ,Alpha Quality Ltd,"1,250.50","18,500",35,8,1.2,30,28%,24%,0.1,15,18,17,58,0,600
+BETAV,Beta Value Ltd,220,"4,200",9,1.2,4.5,40,18,16,0.2,8,9,7,51,0,250
+GAMMAP,Gamma Pledged Ltd,310,"3,100",20,3,1,20,26,22,0.2,14,20,18,62,48.5,90
+SAHYOG,Sahyog Finance Ltd,520,"11,000",18,2.6,0.8,15,10,19,5.2,18,22,20,55,0,"-1,200"
+DELTAH,Delta Heavy Ltd,95,750,25,2.4,0.5,10,12,10,1.4,6,-,4,38,12,(45)
+EPSIL,Epsilon Micro Ltd,18,220,70,9,0,0,30,35,0,45,60,50,72,0,4

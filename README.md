@@ -6,10 +6,10 @@
 
 **Turn Claude into a Dalal Street analyst that gets the maths right.**
 
-29 skills · 16 tested calculators · NSE/BSE · NIFTY F&O · exact STT & charges · Indian tax · Groww / Zerodha / Dhan / Upstox
+35 skills · 22 tested calculators · NSE/BSE · NIFTY F&O · exact STT & charges · Indian tax · Groww / Zerodha / Dhan / Upstox
 
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?logo=claude&logoColor=white)](#quick-start)
-[![Skills](https://img.shields.io/badge/skills-29-2563EB)](#skills)
+[![Skills](https://img.shields.io/badge/skills-35-2563EB)](#skills)
 [![Tests](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml/badge.svg)](https://github.com/Shubhamkumartrichy/claude-trading-skills-india/actions/workflows/tests.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](#calculators)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-22C55E)](#calculators)
@@ -109,6 +109,9 @@ Install the whole pack. Several skills call scripts that live in sibling skills 
 | "Are FIIs buying or selling? What's the FII long/short ratio?" | Flow streaks, DII absorption, FII index-futures long % from NSE's participant OI file, extremes flagged |
 | "Backtest a 20/50 SMA cross on RELIANCE with Zerodha charges" | Next-bar fills, exact charges, CAGR vs buy-and-hold, drawdown, walk-forward and Monte Carlo checks |
 | "Is HDFCBANK vs ICICIBANK a tradable pair?" | Cointegration test, hedge ratio, half-life, z-score, and a whole-lot futures plan |
+| "Any RBI, Fed or CPI events before my trade? When's the next expiry?" | Holiday-adjusted expiries, verified RBI/FOMC dates, results windows, a yes/no event-risk answer |
+| "Is the market expensive right now?" | NIFTY P/E percentile, yield gap vs G-sec, market cap to GDP, froth score and posture |
+| "Find quality compounders in my Screener.in export" | Preset screens with every rule shown, near-misses, pledge and small-cap gates |
 | "Should I apply for this IPO?" | RHP checklist, valuation vs peers, subscription reading, allotment odds, lock-in dates |
 | "Where do I put my stop, GTT or SL?" | Structure/ATR stop plus Indian execution realities: DAY validity, GTT limits, circuits, gaps |
 
@@ -137,7 +140,7 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 
 <a id="skills"></a>
 
-## 🧩 The 29 skills
+## 🧩 The 35 skills
 
 | Group | Skill | What it does |
 |---|---|---|
@@ -147,11 +150,15 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 | | `sector-rotation` | NSE sectoral indices vs NIFTY: relative strength, RRG quadrants, risk-on vs defensive tilt |
 | | `market-breadth` | % of stocks above 20/50/200 DMA, A/D line, new highs/lows, McClellan, breadth thrust, 0–100 health score |
 | | `fii-dii-flows` | FII/DII cash-flow streaks, FII index-futures long/short from NSE participant OI, shareholding changes, bulk/block deals |
+| | `macro-regime` | 6–24 month backdrop: crude, rupee, G-sec yields and curve, smallcap vs NIFTY, equity vs gold |
+| | `market-valuation` | NIFTY P/E and P/B percentiles, yield gap, market cap to GDP, 0–100 froth score |
+| | `event-calendar` | Expiries, holidays, RBI/FOMC/CPI dates, tax dates, results windows, .ics export |
 | **Charts** | `technical-analysis` | Trend, S/R clusters, gaps, indicator dashboard, ATR stops, circuit and gap checks |
 | | `multi-timeframe-analysis` | Weekly → daily → 75-minute screens with a 6-point confluence score |
 | | `rsi-divergence` | Regular and hidden divergences, found automatically, with trading rules |
 | | `fibonacci-trading` | Auto-swing retracements and trend-based extensions, confluence ladder |
 | | `momentum-scanner` | 4% momentum bursts, episodic-pivot gaps on 3× volume, 1–99 RS rating, circuit and liquidity filters |
+| | `exhaustion-reversal` | Parabolic-top score, scale-out plans, F&O-only shorts, washout bottoms, news-reaction failures |
 | | `breakout-planner` | Stage 2 trend template, VCP and flat bases, pivot, GTT breakout plan with circuit-band checks |
 | **Risk** | `position-sizing` | Fixed-fractional with costs, F&O lots, leverage, gap risk, Kelly, journal stats |
 | | `stop-loss-strategies` | Where to put the stop, and how GTT, SL and SL-M really behave in India |
@@ -159,6 +166,7 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 | | `risk-reward-ratio` | R after costs, scale-outs, breakeven win rate, expectancy |
 | | `trading-discipline` | Daily/weekly loss circuit breaker, pre-trade checklist, performance review by setup |
 | | `portfolio-review` | Concentration, sector and market-cap mix, LTCG countdown, beta, drawdown, tax-aware rebalance |
+| | `thesis-tracker` | Trade-idea lifecycle with kill criteria, review dates, post-mortems, LTCG countdown, journal export |
 | **Derivatives** | `fno-options-analysis` | Option chains, PCR, max pain, VIX, IV, Greeks, expiries, OI buildup, SEBI F&O rules |
 | | `options-strategies` | Strategy matrix by view and volatility, expiry-day dynamics, management, events |
 | | `pair-trading` | Engle–Granger cointegration, half-life, z-score signals, lot-rounded stock-futures execution |
@@ -170,12 +178,13 @@ Real output from the bundled calculators. The RELIANCE dashboard uses NSE data f
 | | `ipo-analysis` | RHP checklist, subscription reading, allotment odds, GMP caveats, lock-ins |
 | | `results-season` | Results-day reaction score (A–D), post-results drift, results inside your holding window |
 | | `backtest-lab` | Backtests with exact Indian charges, next-bar fills, parameter sweeps, walk-forward, Monte Carlo |
+| | `stock-screener` | CANSLIM-India, value-dividend, GARP and quality screens on a Screener.in export, pledge gate |
 
 <a id="calculators"></a>
 
 ## 🧮 Calculators
 
-Sixteen standard-library Python engines (Python 3.10+, no installs). Claude runs them, and you can too:
+Twenty-two standard-library Python engines (Python 3.10+, no installs). Claude runs them, and you can too:
 
 ```bash
 # Charges and breakeven: zerodha | groww | angelone | upstox | dhan | all
@@ -213,9 +222,17 @@ python3 skills/results-season/scripts/results.py score --symbol INFY --date 2026
 # Pairs and backtests
 python3 skills/pair-trading/scripts/pairs.py test HDFCBANK ICICIBANK
 python3 skills/backtest-lab/scripts/backtest.py run --symbol RELIANCE --strategy sma-cross --params fast=20 slow=50 --broker zerodha
+
+# Screens, macro, valuation, calendar, exhaustion, thesis memory
+python3 skills/stock-screener/scripts/screen.py run --csv screener_export.csv --preset quality-compounder
+python3 skills/macro-regime/scripts/macro.py status --csv-dir macro_data/
+python3 skills/market-valuation/scripts/valuation.py pe --csv nifty50_pe.csv
+python3 skills/event-calendar/scripts/events.py week
+python3 skills/exhaustion-reversal/scripts/exhaustion.py climax --symbol KAYNES
+python3 skills/thesis-tracker/scripts/thesis.py --store ~/trading/theses.json due
 ```
 
-**Trust but verify:** the 378 unit tests pin hand-checked numbers, and the indicators match the
+**Trust but verify:** the 560 unit tests pin hand-checked numbers, and the indicators match the
 `ta` library to 13 significant digits. Run `python3 -m unittest discover -s tests`. Sample data is in
 [examples/](examples/).
 

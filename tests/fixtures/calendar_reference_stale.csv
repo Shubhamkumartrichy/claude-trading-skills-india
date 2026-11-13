@@ -1,0 +1,7 @@
+date,category,title,impact,source,verified_on
+2027-01-15,rbi,RBI MPC policy decision (test),high,https://example.org/rbi,2026-01-10
+2027-03-01,fomc,US FOMC decision (test),high,https://example.org/fed,
+2027-06-01,us-cpi,US CPI (test),medium,https://example.org/bls,2026-11-01
+2027-06-01,us-jobs,US jobs (test),medium,https://example.org/bls,2026-11-01
+2027-06-01,msci,MSCI review effective (test),medium,https://example.org/msci,2026-11-01
+2027-06-01,gdp,GDP (test),medium,https://example.org/mospi,2026-11-01

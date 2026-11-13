@@ -1,0 +1,67 @@
+date,category,title,impact,source,verified_on
+2026-02-01,budget,Union Budget 2026-27 (Sunday; live special session 09:15-15:00),high,https://www.taxscan.in/top-stories/union-budget-2026-to-be-presented-on-a-sunday-for-first-time-confirms-lok-sabha-speaker-om-birla-1441848,2026-11-12
+2026-02-01,special-session,Budget-day live trading session (Sunday 09:15-15:00),medium,skills/indian-market-structure/references/holidays-2026.md,2026-10-31
+2026-11-08,special-session,Muhurat trading (Diwali Laxmi Pujan; Sunday evening session - timings by exchange circular),low,https://choiceindia.com/news/muhurat-trading-2026-date-timings-market-holidays,2026-11-12
+2026-04-08,rbi,RBI MPC policy decision (meeting 6-8 Apr 2026),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2026-06-05,rbi,RBI MPC policy decision (meeting 3-5 Jun 2026),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2026-08-05,rbi,RBI MPC policy decision (meeting 3-5 Aug 2026),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2026-10-07,rbi,RBI MPC policy decision (meeting 5-7 Oct 2026),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2026-12-04,rbi,RBI MPC policy decision (meeting 2-4 Dec 2026),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2027-02-05,rbi,RBI MPC policy decision (meeting 3-5 Feb 2027),high,https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=62422,2026-11-12
+2026-01-28,fomc,US FOMC decision (meeting 27-28 Jan 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-03-18,fomc,US FOMC decision + projections (meeting 17-18 Mar 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-04-29,fomc,US FOMC decision (meeting 28-29 Apr 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-06-17,fomc,US FOMC decision + projections (meeting 16-17 Jun 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-07-29,fomc,US FOMC decision (meeting 28-29 Jul 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-09-16,fomc,US FOMC decision + projections (meeting 15-16 Sep 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-10-28,fomc,US FOMC decision (meeting 27-28 Oct 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2026-12-09,fomc,US FOMC decision + projections (meeting 8-9 Dec 2026),high,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,2026-11-12
+2027-01-27,fomc,US FOMC decision (meeting 26-27 Jan 2027; tentative until confirmed at the prior meeting),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-03-17,fomc,US FOMC decision + projections (meeting 16-17 Mar 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-04-28,fomc,US FOMC decision (meeting 27-28 Apr 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-06-09,fomc,US FOMC decision + projections (meeting 8-9 Jun 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-07-28,fomc,US FOMC decision (meeting 27-28 Jul 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-09-15,fomc,US FOMC decision + projections (meeting 14-15 Sep 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-10-27,fomc,US FOMC decision (meeting 26-27 Oct 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2027-12-08,fomc,US FOMC decision + projections (meeting 7-8 Dec 2027; tentative),high,https://www.federalreserve.gov/newsevents/pressreleases/monetary20250905a.htm,2026-11-12
+2026-11-10,us-cpi,US CPI (October 2026 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2026-12-10,us-cpi,US CPI (November 2026 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-01-13,us-cpi,US CPI (December 2026 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-02-11,us-cpi,US CPI (January 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-03-10,us-cpi,US CPI (February 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-04-13,us-cpi,US CPI (March 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-05-12,us-cpi,US CPI (April 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-06-10,us-cpi,US CPI (May 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-07-14,us-cpi,US CPI (June 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-08-11,us-cpi,US CPI (July 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-09-14,us-cpi,US CPI (August 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-10-14,us-cpi,US CPI (September 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-11-10,us-cpi,US CPI (October 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2027-12-10,us-cpi,US CPI (November 2027 data),medium,https://www.bls.gov/schedule/news_release/cpi.htm,2026-11-12
+2026-12-04,us-jobs,US jobs report (November 2026),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-01-08,us-jobs,US jobs report (December 2026),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-02-05,us-jobs,US jobs report (January 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-03-05,us-jobs,US jobs report (February 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-04-02,us-jobs,US jobs report (March 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-05-07,us-jobs,US jobs report (April 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-06-04,us-jobs,US jobs report (May 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-07-02,us-jobs,US jobs report (June 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-08-06,us-jobs,US jobs report (July 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-09-03,us-jobs,US jobs report (August 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-10-08,us-jobs,US jobs report (September 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-11-05,us-jobs,US jobs report (October 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2027-12-03,us-jobs,US jobs report (November 2027),medium,https://www.bls.gov/schedule/news_release/empsit.htm,2026-11-12
+2026-11-30,gdp,GDP estimates for Q2 FY2026-27 (MoSPI),medium,https://www.mospi.gov.in/uploads/documents/releaseCalender/1791356248513-ARC_2026_27_Sept_2026.pdf,2026-11-12
+2027-01-07,gdp,First Advance Estimates of GDP for FY2026-27 (MoSPI),medium,https://www.mospi.gov.in/uploads/documents/releaseCalender/1791356248513-ARC_2026_27_Sept_2026.pdf,2026-11-12
+2027-02-26,gdp,GDP: Second Advance Estimates FY2026-27 + Q3 estimates + revisions (MoSPI),medium,https://www.mospi.gov.in/uploads/documents/releaseCalender/1791356248513-ARC_2026_27_Sept_2026.pdf,2026-11-12
+2026-11-11,msci,MSCI November 2026 index review announcement (list out after 23:00 CET = early hours IST next day),medium,https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf,2026-11-12
+2026-12-01,msci,MSCI November 2026 review effective (changes made at the close of 30 Nov 2026),medium,https://www.msci.com/downloads/documents/press-releases/media-room/MSCI_Nov_2026_IR_Pre-Ann_PR_Doc.pdf,2026-11-12
+2027-02-09,msci,MSCI February 2027 index review announcement,medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-03-01,msci,MSCI February 2027 review effective (passive trades at the previous session's close),medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-05-10,msci,MSCI May 2027 index review announcement,medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-05-28,msci,MSCI May 2027 review effective (passive trades at the previous session's close),medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-08-12,msci,MSCI August 2027 index review announcement,medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-09-01,msci,MSCI August 2027 review effective (passive trades at the previous session's close),medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-11-11,msci,MSCI November 2027 index review announcement,medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-12-01,msci,MSCI November 2027 review effective (passive trades at the previous session's close),medium,https://www.msci.com/eqb/pressreleases/archive/ir_dates.pdf,2026-11-12
+2027-02-01,budget,Union Budget 2027-28 (1 Feb by convention; date not yet notified),high,convention since 2017 - confirm with the Parliament Budget Session schedule,

@@ -1,0 +1,5 @@
+input,value,as_of,source
+vix,11.5,10-Nov-2026,NSE India VIX
+mtf_yoy,54,31-Oct-2026,CareEdge note
+demat_new,31,31-Aug-2026,CDSL+NSDL
+# comment rows are skipped,,,

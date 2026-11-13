@@ -5,8 +5,9 @@ description: |
   specialised skills in this pack: technical analysis, multi-timeframe, RSI divergence, Fibonacci,
   position sizing, stop-loss, trailing stops, risk-reward, F&O option chains, options strategies,
   trading costs, tax, market structure, market pulse, market regime, sector rotation, market
-  breadth, FII/DII flows, momentum scans, breakout planning, results reactions, pair trading,
-  backtesting, trading discipline, portfolio review, fundamentals, IPOs and broker integration.
+  breadth, FII/DII flows, macro regime, valuation, event calendar, stock screens, momentum scans,
+  breakouts, exhaustion reversals, results reactions, pair trading, backtesting, trading
+  discipline, thesis tracking, portfolio review, fundamentals, IPOs and broker integration.
 
   Use whenever the user asks to analyse, check or plan a trade in an Indian stock, index (NIFTY,
   BANKNIFTY, SENSEX) or F&O contract: "analyze RELIANCE", "should I buy HDFCBANK", "what's the setup
@@ -67,13 +68,18 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Sectors | Which NSE sectors lead or lag NIFTY | `sector-rotation` (`sectors.py rotation`) |
 | Breadth | % of stocks above DMAs, A/D line, new highs/lows, health score | `market-breadth` (`breadth.py status`) |
 | Flows | FII/DII cash flows, FII index-futures long/short, bulk/block deals | `fii-dii-flows` (`flows.py`) |
+| Macro | 6–24 month backdrop: crude, rupee, G-sec yields, size factor, equity vs gold | `macro-regime` (`macro.py status`) |
+| Valuation | NIFTY P/E percentile, yield gap, market cap to GDP, froth score | `market-valuation` (`valuation.py`) |
+| Calendar | RBI, FOMC, CPI, expiries, holidays, results windows before the trade | `event-calendar` (`events.py window`) |
 | Structure | Weekly bias → daily setup → 75-min/15-min entry | `multi-timeframe-analysis` (`ta.py mtf`) |
 | Technicals | Trend, levels, indicator dashboard, scenarios | `technical-analysis` (`ta.py summary`) |
 | Momentum | Regular/hidden RSI divergences | `rsi-divergence` (`ta.py divergence`) |
 | Levels | Retracement entries, extension targets | `fibonacci-trading` (`ta.py fib`) |
+| Screen | Fundamental screens on a Screener.in export | `stock-screener` (`screen.py run`) |
 | Ideas | Momentum bursts, episodic pivots, RS leaders across a universe | `momentum-scanner` (`momentum.py scan`) |
 | Setup | Stage 2 trend template, VCP/flat base, pivot, breakout plan | `breakout-planner` (`breakout.py check`) |
 | Results | Results-day reaction score, post-results drift, results in the holding window | `results-season` (`results.py`) |
+| Exhaustion | Parabolic tops and washout bottoms; scale out, or short only via F&O | `exhaustion-reversal` (`exhaustion.py`) |
 | Quality | Fundamentals and governance red flags (investing horizon) | `fundamental-screening` |
 | Derivatives | OI, PCR, max pain, IV, expected move | `fno-options-analysis` (`options.py`) |
 | Decision | Buy / sell / hold / wait, with explicit triggers | this skill |
@@ -83,6 +89,7 @@ the specialised skill directly when the question is narrow (see the routing tabl
 | Costs/tax | Charges, breakeven, STCG vs LTCG timing | `trading-costs`, `indian-tax-for-traders` |
 | Validate | Backtest the rule with Indian charges before trading it | `backtest-lab` (`backtest.py`) |
 | Gate | Loss limits, pre-trade checklist before any order ticket | `trading-discipline` (`discipline.py gate`) |
+| Memory | Record the thesis, kill criteria and review dates; post-mortem on close | `thesis-tracker` (`thesis.py`) |
 
 Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 `../position-sizing/scripts/risk.py`, `../fno-options-analysis/scripts/options.py`,
@@ -92,7 +99,10 @@ Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 `../portfolio-review/scripts/portfolio.py`, `../market-breadth/scripts/breadth.py`,
 `../fii-dii-flows/scripts/flows.py`, `../momentum-scanner/scripts/momentum.py`,
 `../results-season/scripts/results.py`, `../pair-trading/scripts/pairs.py`,
-`../backtest-lab/scripts/backtest.py`. All are standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
+`../backtest-lab/scripts/backtest.py`, `../stock-screener/scripts/screen.py`,
+`../macro-regime/scripts/macro.py`, `../market-valuation/scripts/valuation.py`,
+`../event-calendar/scripts/events.py`, `../thesis-tracker/scripts/thesis.py`,
+`../exhaustion-reversal/scripts/exhaustion.py`. All are standard-library Python. Run them instead of doing arithmetic by hand, and show the key output lines.
 
 ## Routing table
 
@@ -126,6 +136,12 @@ Scripts, relative to this skill's folder: `../technical-analysis/scripts/ta.py`,
 | "How did X react to results? Results this week?" | results-season | fundamental-screening |
 | "Is HDFCBANK vs ICICIBANK a tradable pair?" | pair-trading | fno-options-analysis |
 | "Backtest this strategy" | backtest-lab | trading-costs, position-sizing |
+| "What's the macro backdrop? Crude, rupee, yields?" | macro-regime | market-regime |
+| "Is the market expensive? How frothy is it?" | market-valuation | market-breadth |
+| "Any RBI / Fed / CPI events this week? Next expiry?" | event-calendar | market-pulse |
+| "Screen for quality / dividend / CANSLIM stocks" | stock-screener | fundamental-screening |
+| "Is X parabolic? Should I book profits?" | exhaustion-reversal | trailing-stops |
+| "Track my trade idea / what's due for review?" | thesis-tracker | trading-discipline |
 
 ## Output format (full analysis)
 

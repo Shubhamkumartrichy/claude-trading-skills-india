@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-11-10",
+  "inputs": {
+    "valuation_percentile": {
+      "value": 78,
+      "source": "valuation.py pe on niftyindices CSV"
+    },
+    "pe": {
+      "value": 22.4,
+      "as_of": "2026-11-10",
+      "source": "niftyindices.com"
+    },
+    "gsec": {
+      "value": 6.55,
+      "as_of": "2026-11-10",
+      "source": "RBI/FBIL"
+    },
+    "mcap": {
+      "value": 470,
+      "as_of": "2026-11-10",
+      "source": "BSE"
+    },
+    "gdp": {
+      "value": 357,
+      "as_of": "2026-05-29",
+      "source": "MoSPI FY26 provisional"
+    },
+    "largecap_pe": 22.4,
+    "midcap_pe": 33.0,
+    "smallcap_pe": 30.0,
+    "vix": {
+      "value": 11.5,
+      "source": "NSE"
+    },
+    "breadth_score": 68,
+    "ipo_count": {
+      "value": 15,
+      "source": "IPO tracker"
+    },
+    "ipo_months": 3,
+    "ipo_listing_gain": 18,
+    "sme_subscription": 120,
+    "sme_over_100x_pct": 30,
+    "sip_inflow": {
+      "value": 32490,
+      "as_of": "2026-09-30",
+      "source": "AMFI Sep-2026"
+    },
+    "sip_inflow_year_ago": {
+      "value": 24509,
+      "as_of": "2025-09-30",
+      "source": "AMFI Sep-2025"
+    },
+    "demat_new": {
+      "value": 31,
+      "as_of": "2026-10-31",
+      "source": "CDSL+NSDL"
+    },
+    "demat_avg_12m": {
+      "value": 26,
+      "as_of": "2026-10-31"
+    },
+    "fno_yoy": {
+      "value": 15,
+      "as_of": "2026-10-31"
+    },
+    "mtf_book": {
+      "value": 148000,
+      "as_of": "2026-10-31",
+      "source": "NSE+BSE MTF"
+    },
+    "mtf_book_year_ago": {
+      "value": 96000,
+      "as_of": "2025-10-31"
+    }
+  }
+}
